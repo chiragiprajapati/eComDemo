@@ -14,7 +14,7 @@ public class ProductController {
     @Autowired
     private ProductService ProdService;
 
-    @GetMapping("status/1")
+    @GetMapping("status/0")
     public List<ProductListModel> findByproductStatus(){
         return ProdService.getProductsByStatus(1);
     }
